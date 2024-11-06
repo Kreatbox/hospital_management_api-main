@@ -30,6 +30,12 @@ app.use("/api/clinic", ClinicRoutes);
 app.use("/api/patient", PatientRoutes);
 app.use("/api/doctor", DoctorRoutes);
 
+app.get("/", (req, res) => {
+  res.send(
+    "Welcome to the Hospital Management API. Use the /api/ endpoints to interact."
+  );
+});
+
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);
