@@ -20,6 +20,11 @@ app.use(
   })
 );
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Credentials", "true");
+  next();
+});
+
 mongoose
   .connect(process.env.MONGO_SERVER)
   .then(() => console.log("connected to mongodb"))
