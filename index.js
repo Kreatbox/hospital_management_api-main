@@ -17,6 +17,7 @@ app.use(
       "https://hospital-management-client-main-git-main-kreatboxs-projects.vercel.app",
     credentials: true,
     optionsSuccessStatus: 200,
+    methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
 
