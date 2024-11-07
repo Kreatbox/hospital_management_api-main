@@ -13,8 +13,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin:
-      "https://hospital-management-client-main-git-main-kreatboxs-projects.vercel.app",
+    origin: "https://hospital-management-client-main.vercel.app",
     credentials: true,
     optionsSuccessStatus: 200,
     methods: ["GET", "POST", "PUT", "DELETE"],
